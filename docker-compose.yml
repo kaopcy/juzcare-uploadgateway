@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  upload:
+    build: .
+    restart: always
+    ports:
+      - 3002:3002
