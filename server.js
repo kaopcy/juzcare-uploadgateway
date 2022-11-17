@@ -44,7 +44,9 @@ app.post("/", async (req, res) => {
                            message: err instanceof Error ? err : "something went wrong",
                         });
                      }
-                     uploadedFileName.push(fileName);
+                     uploadedFileName.push(
+                        `https://minio-juzcare.celab.network/juzcare-media/${fileName}`
+                     );
                      console.log("res");
                      res();
                   }
